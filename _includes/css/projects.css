@@ -1,4 +1,38 @@
 .project {
   height: 300px;
-  width: 300px;
+  width: 450px;
+  background-position: center;
+  background-repeat: no-repeat;
+  background-size: contain;
+}
+
+.projects {
+  display: flex;
+  justify-content: space-around;
+}
+
+.small-details {
+  background-color: #1473ed;
+  display: flex;
+  height: 200px;
+  justify-content: flex-end;
+}
+
+.small-details p  {
+  font-size: 25px;
+  text-align: right;
+  margin: 20px 30px 0 0;
+  width: 70%;
+}
+
+.work {
+  background-color: #8a6bb1;
+}
+
+.work .work-details {
+  text-align: center;
+}
+
+.work .work-details h2 {
+  margin: 0;
 }

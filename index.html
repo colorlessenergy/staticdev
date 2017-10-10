@@ -2,17 +2,19 @@
 layout: default
 ---
 
-<section>
-  <p>Hey, I am a web developer</p>
+<section class="small-details">
+  <p>
+    Hey, I am a web developer that utilizes the JAMstack and uses a CMS so my clients can edit content on their website!
+  </p>
 </section>
-<section>
-  <section>
+<section class="work" id="work">
+  <section class="work-details">
     <h2>Check out my current websites: </h2>
     <p>
-      I can customize the website and make it for you! I focus on the quality of the website over anything else
+      I provide quality and efficient websites.
     </p>
   </section>
-  <section>
+  <section class="projects">
     {% for data in site.data.templates %}
       <div class="project" style="background-image: url('image/{{data.image}}')">
 
@@ -20,7 +22,7 @@ layout: default
     {% endfor %}
   </section>
 </section>
-<section>
+<section id="about">
   <h2>About me</h2>
   <p>
     Brian Munoz is a web developer based in Long Beach, CA. Brian finds it fun to find creative and efficient soultions to everything that is the web.
