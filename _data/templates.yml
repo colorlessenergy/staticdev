@@ -1,0 +1,9 @@
+- title: restaurant theme
+  desc: a website for a restaurant
+  link: http://yum.netlify.com/
+  image: restaurant-template.png
+
+- title: blog theme
+  desc: a website for a blog
+  link: https://blog-theme.netlify.com/
+  image: blog-basic.png

@@ -1,0 +1,28 @@
+---
+layout: default
+---
+
+<section>
+  <p>Hey, I am a web developer</p>
+</section>
+<section>
+  <section>
+    <h2>Check out my current websites: </h2>
+    <p>
+      I can customize the website and make it for you! I focus on the quality of the website over anything else
+    </p>
+  </section>
+  <section>
+    {% for data in site.data.templates %}
+      <div class="project" style="background-image: url('image/{{data.image}}')">
+
+      </div>
+    {% endfor %}
+  </section>
+</section>
+<section>
+  <h2>About me</h2>
+  <p>
+    Brian Munoz is a web developer based in Long Beach, CA. Brian finds it fun to find creative and efficient soultions to everything that is the web.
+  </p>
+</section>
