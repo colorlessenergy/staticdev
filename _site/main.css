@@ -4,6 +4,64 @@ html, body {
   margin: 0;
 }
 
+.contact {
+  align-items: center;
+  background-color: #232323;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.contact p {
+  text-align: center;
+  padding: 10px;
+}
+
+.contact form {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+}
+
+.contact form input, .contact form textarea {
+  outline: none;
+  padding: 20px;
+}
+
+.contact form textarea {
+  height: 300px;
+}
+
+.contact form button {
+  background-color: #222;
+  color: #fff;
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: bold;
+  margin: 10px auto;
+  padding: 10px;
+  text-align: center;
+  width: 100px;
+  transition: all ease 1s;
+}
+
+.contact form button:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+.contact img {
+  height: 150px;
+  width: 150px;
+}
+
+.stick-nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}
+
 
 header {
   align-items: center;
@@ -41,23 +99,50 @@ nav ul li a {
 }
 
 
+.about {
+  background-color: #f5f5f5;
+  padding: 15px 0;
+  text-align: center;
+}
+
+.about h2 {
+  margin: 0;
+}
+
 .project {
-  height: 300px;
-  width: 450px;
   background-position: center;
   background-repeat: no-repeat;
   background-size: contain;
+  height: 300px;
+  width: 300px;
+}
+
+.project:hover > span {
+  opacity: 1;
+}
+
+.project span {
+  color: #fff;
+  opacity: 0;
+  text-decoration: none;
+  transition: opacity ease 1s;
 }
 
 .projects {
+  align-items: center;
   display: flex;
   justify-content: space-around;
+  flex-direction: column;
+}
+
+.projects a {
+  text-decoration: none;
 }
 
 .small-details {
-  background-color: #1473ed;
+  background-color: #b16b6b;
   display: flex;
-  height: 200px;
+  height: 400px;
   justify-content: flex-end;
 }
 
@@ -70,13 +155,35 @@ nav ul li a {
 
 .work {
   background-color: #8a6bb1;
+  padding: 25px 0;
 }
 
 .work .work-details {
+  color: #fff;
   text-align: center;
 }
 
 .work .work-details h2 {
   margin: 0;
+}
+
+.work .work-details p {
+  padding: 10px;
+}
+
+@media only screen and (min-width: 961px) {
+
+  .project {
+    width: 450px;
+  }
+
+  .projects {
+    flex-direction: initial;
+  }
+
+  .small-details {
+    height: 200px;
+  }
+
 }
 

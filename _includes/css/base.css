@@ -3,3 +3,61 @@ html, body {
   line-height: 1.5;
   margin: 0;
 }
+
+.contact {
+  align-items: center;
+  background-color: #232323;
+  color: #fff;
+  display: flex;
+  justify-content: center;
+  flex-direction: column;
+}
+
+.contact p {
+  text-align: center;
+  padding: 10px;
+}
+
+.contact form {
+  display: flex;
+  flex-direction: column;
+  width: 90%;
+}
+
+.contact form input, .contact form textarea {
+  outline: none;
+  padding: 20px;
+}
+
+.contact form textarea {
+  height: 300px;
+}
+
+.contact form button {
+  background-color: #222;
+  color: #fff;
+  cursor: pointer;
+  font-size: 20px;
+  font-weight: bold;
+  margin: 10px auto;
+  padding: 10px;
+  text-align: center;
+  width: 100px;
+  transition: all ease 1s;
+}
+
+.contact form button:hover {
+  background-color: #fff;
+  color: #000;
+}
+
+.contact img {
+  height: 150px;
+  width: 150px;
+}
+
+.stick-nav {
+  position: fixed;
+  top: 0;
+  width: 100%;
+}

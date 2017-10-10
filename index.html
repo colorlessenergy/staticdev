@@ -11,18 +11,22 @@ layout: default
   <section class="work-details">
     <h2>Check out my current websites: </h2>
     <p>
-      I provide quality and efficient websites.
+      I provide high quality and efficient websites.
     </p>
   </section>
   <section class="projects">
     {% for data in site.data.templates %}
-      <div class="project" style="background-image: url('image/{{data.image}}')">
-
-      </div>
+      <a href="{{data.link}}">
+        <div class="project" style="background-image: url('image/{{data.image}}')">
+          <span>
+            {{ data.desc }}
+          </span>
+        </div>
+      </a>
     {% endfor %}
   </section>
 </section>
-<section id="about">
+<section class="about" id="about">
   <h2>About me</h2>
   <p>
     Brian Munoz is a web developer based in Long Beach, CA. Brian finds it fun to find creative and efficient soultions to everything that is the web.

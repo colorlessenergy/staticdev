@@ -18,7 +18,7 @@
   </div>
 </header>
 
-  <nav>
+  <nav id="sticky">
   <ul>
     <li><a href="#work">Work</a></li>
     <li><a href="#about">About</a></li>
@@ -36,22 +36,30 @@
   <section class="work-details">
     <h2>Check out my current websites: </h2>
     <p>
-      I provide quality and efficient websites.
+      I provide high quality and efficient websites.
     </p>
   </section>
   <section class="projects">
     
-      <div class="project" style="background-image: url('image/restaurant-template.png')">
-
-      </div>
+      <a href="http://yum.netlify.com/">
+        <div class="project" style="background-image: url('image/restaurant-template.png')">
+          <span>
+            a website for a restaurant
+          </span>
+        </div>
+      </a>
     
-      <div class="project" style="background-image: url('image/blog-basic.png')">
-
-      </div>
+      <a href="https://blog-theme.netlify.com/">
+        <div class="project" style="background-image: url('image/blog-basic.png')">
+          <span>
+            a website for a blog
+          </span>
+        </div>
+      </a>
     
   </section>
 </section>
-<section id="about">
+<section class="about" id="about">
   <h2>About me</h2>
   <p>
     Brian Munoz is a web developer based in Long Beach, CA. Brian finds it fun to find creative and efficient soultions to everything that is the web.
@@ -59,7 +67,7 @@
 </section>
 
 
-  <footer id="contact">
+  <footer class="contact" id="contact">
   <h2>Give me a chance!</h2>
   <p>
     If you want any services or just want to say hi, send me a message using the form below
@@ -68,15 +76,14 @@
   <form method="POST" action="http://formspree.io/theluckorange@yahoo.com">
     <input type="email" name="email" placeholder="Your email">
     <textarea name="message" placeholder="Your message"></textarea>
-    <button type="submit">Send</button>
+    <button type="submit">SEND</button>
   </form>
 
-  <ul>
-    <li><a href="https://www.instagram.com/codebrian_/">Instagram</a></li>
-  </ul>
+  <a href="https://www.instagram.com/codebrian_/"><img src="image/instagram.svg" alt=""></a>
 
   <p>&copy; Brian Munoz 2017</p>
 </footer>
 
+  <script src="main.js"></script>
 </body>
 </html>
